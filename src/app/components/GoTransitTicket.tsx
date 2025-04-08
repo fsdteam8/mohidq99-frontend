@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { useState, useEffect } from "react"
 
 export default function GoTransitTicket() {
@@ -80,8 +81,9 @@ export default function GoTransitTicket() {
       <div className="flex flex-col h-full">
         {/* Header */}
         <div className="bg-blink text-white py-4 flex flex-col items-center">
-          <div className="w-16 h-16 mb-2">
-            <GoTransitLogo />
+          <div className=" mb-2">
+            {/* <GoTransitLogo /> */}
+            <Image src="/logo.svg" alt="Logo" width={200} height={300} className="w-[150px] h-[80px] " />
           </div>
     
           <div className="flex items-center justify-between w-full mt-2 animate-marquee">
@@ -175,18 +177,18 @@ export default function GoTransitTicket() {
   )
 }
 
-function GoTransitLogo() {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-23 -11 46 22" className="w-full h-full">
-      <defs>
-        <clipPath id="c">
-          <path d="m-23-11h46v22h-46zM23 1v-2h-34v-10h-2v22h2V1z" />
-        </clipPath>
-      </defs>
-      <path clipPath="url(#c)" fill="#ffffff" d="m-1 0a11 11 0 1 0-11 11h11zm2 0a1 1 0 0 0 22 0A1 1 0 0 0 1 0z" />
-    </svg>
-  )
-}
+// function GoTransitLogo() {
+//   return (
+//     <svg xmlns="http://www.w3.org/2000/svg" viewBox="-23 -11 46 22" className="w-full h-full ">
+//       <defs>
+//         <clipPath id="c">
+//           <path d="m-23-11h46v22h-46zM23 1v-2h-34v-10h-2v22h2V1z" />
+//         </clipPath>
+//       </defs>
+//       <path clipPath="url(#c)" fill="#4a7729" d="m-1 0a11 11 0 1 0-11 11h11zm2 0a1 1 0 0 0 22 0A1 1 0 0 0 1 0z" />
+//     </svg>
+//   )
+// }
 
 function OneWayIcon() {
   return (
