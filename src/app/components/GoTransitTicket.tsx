@@ -79,7 +79,7 @@ export default function GoTransitTicket() {
       {/* Ticket Container */}
       <div className="flex flex-col h-full">
         {/* Header */}
-        <div className="bg-[#2841b3] text-white py-4 flex flex-col items-center">
+        <div className="bg-blink text-white py-4 flex flex-col items-center">
           <div className="w-16 h-16 mb-2">
             <GoTransitLogo />
           </div>
@@ -103,7 +103,7 @@ export default function GoTransitTicket() {
 
         {/* Ticket Info */}
         <div className="bg-white p-4">
-          <div className="flex items-center justify-between border-b border-gray-200 pb-4">
+          <div className="flex items-center justify-between border-b border-dotted border-gray-200 pb-4">
             <div className="flex flex-col">
               <h2 className="text-3xl font-bold text-center text-black">x1</h2>
               <p className="text-black text-center">Passenger(s)</p>
@@ -132,7 +132,7 @@ export default function GoTransitTicket() {
             </div>
           </div>
 
-          <div className="py-4 border-b border-gray-200">
+          <div className="py-4 ">
             <p className="text-md  text-gray-700 text-center">
               Ticket Number: <span className="font-bold">MZ63313105</span>
             </p>
@@ -143,7 +143,7 @@ export default function GoTransitTicket() {
             <div className="w-full h-16 mb-2">
               <BarcodeIcon />
             </div>
-            <p className="text-blue-600 font-bold text-lg mt-[-50px]">ACTIVE</p>
+            <p className="text-blue-200  text-xl mt-[-60px] bg-white p-2 blink">ACTIVE</p>
           </div>
 
           {/* Date and Time Info */}
@@ -160,7 +160,7 @@ export default function GoTransitTicket() {
         </div>
 
         {/* Footer */}
-        <div className="bg-[#2841b3] text-white p-4 flex flex-col items-center">
+        <div className="bg-blink text-white p-4 flex flex-col items-center">
           <p className="text-sm text-center mb-3">
             Please show proof of your ticket to the
             <br />
