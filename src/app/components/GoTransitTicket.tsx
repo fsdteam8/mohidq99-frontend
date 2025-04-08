@@ -109,9 +109,20 @@ export default function GoTransitTicket() {
               <p className="text-black text-center">Passenger(s)</p>
               <p className="text-xs text-black text-center">1x Adult</p>
             </div>
-            <div className="w-8 h-8 ml-[-20px] text-gray-500 text-center">
+          
+
+            <div className="flex flex-col items-center">
+  {/* Top vertical line */}
+  <div className="w-px h-10 bg-gray-300 ml-[-20px]" />
+
+  {/* Logo */}
+  <div className="w-8 h-8 ml-[-20px] text-gray-500 text-center">
               <TrainIcon />
             </div>
+
+  {/* Bottom vertical line */}
+  <div className="w-px h-10 bg-gray-300 ml-[-20px]" />
+</div>
             <div className="flex flex-col items-center">
             <div className="w-6 h-6 text-gray-700">
                 <OneWayIcon />
@@ -138,12 +149,12 @@ export default function GoTransitTicket() {
           {/* Date and Time Info */}
           <div className="flex justify-between text-xs text-gray-700 py-2">
             <div>
-              <p className="font-medium">CURRENT DATE & TIME:</p>
-              <p>{currentTime}</p>
+              <p className="font-bold">CURRENT DATE & TIME:</p>
+              <p className="font-bold">{currentTime}</p>
             </div>
             <div className="text-right">
-              <p className="font-medium">TIME SINCE ACTIVATION:</p>
-              <p>{timeSinceActivation}</p>
+              <p className="font-bold">TIME SINCE ACTIVATION:</p>
+              <p className="font-bold">{timeSinceActivation}</p>
             </div>
           </div>
         </div>
