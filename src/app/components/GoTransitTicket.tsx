@@ -88,9 +88,9 @@ export default function GoTransitTicket() {
     
           <div className="flex items-center justify-between w-full mt-2 animate-marquee">
             <div className="w-1 h-1 bg-white rounded-full" />
-            <h1 className="text-[24px] font-bold text-center ">GO TRANSIT</h1>
+            <h1 className="text-[24px] font-medium text-center ">GO TRANSIT</h1>
             <div className="w-1 h-1 bg-white rounded-full" />
-            <h1 className="text-[24px] font-bold text-center ">GO TRANSIT</h1>
+            <h1 className="text-[24px] font-medium text-center ">GO TRANSIT</h1>
           </div>
           <div className="flex items-center justify-center w-full mt-2">
            
@@ -98,16 +98,16 @@ export default function GoTransitTicket() {
             
           </div>
           <div className="relative w-full mt-4 mb-[-14px] flex items-center justify-between">
-            <div className="absolute top-1/2 left-0 right-0 h-1 bg-blue-500  transform -translate-y-1/2" />
-            <div className="absolute top-1/2 left-1/2 w-5 h-5 bg-blue-500 border-white  border-2 rounded-full transform -translate-x-1/2 -translate-y-1/2" />
+            <div className="absolute top-1/2 left-0 right-0 h-1 bg-blue-700  transform -translate-y-1/2" />
+            <div className="absolute top-1/2 left-1/2 w-5 h-5 bg-blue-700 border-white  border-2 rounded-full transform -translate-x-1/2 -translate-y-1/2" />
           </div>
         </div>
 
         {/* Ticket Info */}
         <div className="bg-white p-4">
-          <div className="flex items-center justify-between border-b border-dotted border-gray-200 pb-4 lg:px-10">
+          <div className="flex items-center justify-between border-b border-dashed border-gray-200 pb-4 lg:px-10">
             <div className="flex flex-col">
-              <h2 className="text-3xl font-bold text-center text-black">x1</h2>
+              <h2 className="text-5xl font-medium text-center text-black">x1</h2>
               <p className="text-black text-xl text-center font-bold">Passenger(s)</p>
               <p className="text-lg text-black text-center">1x Adult</p>
             </div>
@@ -126,7 +126,7 @@ export default function GoTransitTicket() {
   <div className="w-px h-10 bg-gray-300 ml-[-30px]" />
 </div>
             <div className="flex flex-col items-center">
-            <div className="w-6 h-6 text-gray-700">
+            <div className="w-10 h-10 text-gray-700">
                 <OneWayIcon />
               </div>
               <p className=" mr-2 text-black text-xl font-bold">One-Way</p>
@@ -134,14 +134,14 @@ export default function GoTransitTicket() {
             </div>
           </div>
 
-          <div className="py-4 ">
+          <div className="py-2 ">
             <p className="text-lg  text-gray-700 text-center font-bold">
               Ticket Number: <span className="">MZ63313105</span>
             </p>
           </div>
 
           {/* Barcode */}
-          <div className="py-4 flex flex-col items-center">
+          <div className="pb-4 flex flex-col items-center">
             <div className="w-full h-16 mb-2">
               <BarcodeIcon />
             </div>
@@ -150,20 +150,20 @@ export default function GoTransitTicket() {
 
           {/* Date and Time Info */}
           <div className="flex justify-between   text-gray-700 py-2">
-            <div>
-              <p className="font-bold text-sm">CURRENT DATE & TIME:</p>
-              <p className="font-bold text-sm">{currentTime}</p>
+            <div className=" w-auto ">
+              <p className="font-bold text-center  text-[12px]">CURRENT DATE & TIME:</p>
+              <p className="font-bold text-[16px]">{currentTime}</p>
             </div>
             <div className="text-right ">
-              <p className="font-bold">TIME SINCE ACTIVATION:</p>
-              <p className="font-bold text-center">{timeSinceActivation}</p>
+              <p className="font-bold text-[12px]">TIME SINCE ACTIVATION:</p>
+              <p className="font-bold text-center text-[16px]">{timeSinceActivation}</p>
             </div>
           </div>
         </div>
 
         {/* Footer */}
-        <div className="bg-blink text-white p-4 flex flex-col items-center">
-          <p className="text-sm text-center mb-3 ">
+        <div className="bg-blink text-white p-4 pt-18 flex flex-col items-center">
+          <p className="text-xl text-center mb-3 ">
             Please show proof of your ticket to the
             <br />
             Customer Protective Officers when
