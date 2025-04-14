@@ -93,39 +93,39 @@ useEffect(() => {
           </div>
 
           {/* <div className="flex items-center overflow-x-auto justify-between w-full mt-2 animate-marquee  ">
-            <div className="w-1 h-1 bg-white rounded-full" />
+            <div className="w-2 h-2 bg-white rounded-full" />
             
             <h1 className="text-[24px] font-medium text-center ">GO TRANSIT</h1>
-            <div className="w-1 h-1 bg-white rounded-full" />
+            <div className="w-2 h-2 bg-white rounded-full" />
             <h1 className="text-[24px] font-medium text-center ">GO TRANSIT</h1>
-            <div className="w-1 h-1 bg-white rounded-full" />
+            <div className="w-2 h-2 bg-white rounded-full" />
             <h1 className="text-[24px] font-medium text-center ">GO TRANSIT</h1>
           </div> */}
 
 <div className="marquee text-White p-0 ite  ">
   <ol className="items-center">
     <li>GO TRANSIT</li>
-    <div className="w-1 h-1 bg-white rounded-full mx-20" />
+    <div className="w-2 h-2 bg-white rounded-full mx-20" />
     <li>GO TRANSIT</li>
-    <div className="w-1 h-1 bg-white rounded-full mx-20" />
+    <div className="w-2 h-2 bg-white rounded-full mx-20" />
     <li>GO TRANSIT</li>
-    <div className="w-1 h-1 bg-white rounded-full mx-20" />
+    <div className="w-2 h-2 bg-white rounded-full mx-20" />
     <li>GO TRANSIT</li>
-    <div className="w-1 h-1 bg-white rounded-full mx-20" />
+    <div className="w-2 h-2 bg-white rounded-full mx-20" />
     <li>GO TRANSIT</li>
-    <div className="w-1 h-1 bg-white rounded-full mx-20" />
+    <div className="w-2 h-2 bg-white rounded-full mx-20" />
     <li>GO TRANSIT</li>
-    <div className="w-1 h-1 bg-white rounded-full mx-20" />
+    <div className="w-2 h-2 bg-white rounded-full mx-20" />
     <li>GO TRANSIT</li>
-    <div className="w-1 h-1 bg-white rounded-full mx-20" />
+    <div className="w-2 h-2 bg-white rounded-full mx-20" />
     <li>GO TRANSIT</li>
-    <div className="w-1 h-1 bg-white rounded-full mx-20" />
+    <div className="w-2 h-2 bg-white rounded-full mx-20" />
     <li>GO TRANSIT</li>
-    <div className="w-1 h-1 bg-white rounded-full mx-20" />
+    <div className="w-2 h-2 bg-white rounded-full mx-20" />
     <li>GO TRANSIT</li>
-    <div className="w-1 h-1 bg-white rounded-full mx-20" />
+    <div className="w-2 h-2 bg-white rounded-full mx-20" />
     <li>GO TRANSIT</li>
-    <div className="w-1 h-1 bg-white rounded-full mx-20" />
+    <div className="w-2 h-2 bg-white rounded-full mx-20" />
     <li>GO TRANSIT</li>
   </ol>
 </div>
@@ -186,7 +186,7 @@ useEffect(() => {
               <BarcodeIcon />
             </div>
 
-            <p className="text-blue-700 mt-[-60px] bg-white text-xl   p-2 ">
+            <p className="text-blue-700 mt-[-65px] bg-white text-[24px] px-4  p-2 ">
               <span className="blink">ACTIVE</span>
             </p>
           </div>
