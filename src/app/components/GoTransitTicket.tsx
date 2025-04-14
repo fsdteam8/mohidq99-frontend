@@ -49,29 +49,37 @@ export default function GoTransitTicket() {
 
     return () => clearInterval(timer);
   }, [timeLeft, timeSinceActivation]);
+// ---------------------
 
-  const [currentTime, setCurrentTime] = useState("");
 
-  useEffect(() => {
-    const updateTime = () => {
-      const now = new Date();
-      const formatted = now.toLocaleString("en-US", {
-        month: "short",
-        day: "numeric",
-        year: "numeric",
-        hour: "2-digit",
-        minute: "2-digit",
-        second: "2-digit",
-        hour12: true,
-      });
-      setCurrentTime(formatted);
-    };
+const [currentTime, setCurrentTime] = useState("");
 
-    updateTime(); // Initial call
-    const interval = setInterval(updateTime, 1000); // Update every second
+useEffect(() => {
+  const updateTime = () => {
+    const now = new Date();
 
-    return () => clearInterval(interval); // Cleanup on unmount
-  }, []);
+    // Format date part manually to control commas
+    const month = now.toLocaleString("en-US", { month: "short" });
+    const day = now.getDate();
+    const year = now.getFullYear();
+
+    // Format time part using toLocaleTimeString
+    const time = now.toLocaleTimeString("en-US", {
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hour12: true,
+    });
+
+    const formatted = `${month} ${day}, ${year} ${time}`;
+    setCurrentTime(formatted);
+  };
+
+  updateTime(); // Initial call
+  const interval = setInterval(updateTime, 1000); // Update every second
+
+  return () => clearInterval(interval); // Cleanup on unmount
+}, []);
 
   return (
     <div className="w-full  max-w-2xl mx-auto rounded-lg shadow-lg ">
@@ -84,12 +92,17 @@ export default function GoTransitTicket() {
             {/* <Image src="/logo.svg" alt="Logo"  width={200} height={300} className="w-[150px] h-[80px] text-amber-300" /> */}
           </div>
 
-          <div className="flex items-center justify-between w-full mt-2 animate-marquee">
+          <div className="flex items-center overflow-x-auto justify-between w-[200vw] mt-2 animate-marquee  ">
+          <h1 className="text-[24px] font-medium text-center ">GO TRANSIT</h1>
             <div className="w-1 h-1 bg-white rounded-full" />
+            
             <h1 className="text-[24px] font-medium text-center ">GO TRANSIT</h1>
             <div className="w-1 h-1 bg-white rounded-full" />
             <h1 className="text-[24px] font-medium text-center ">GO TRANSIT</h1>
           </div>
+
+
+          
           <div className="flex items-center justify-center w-full mt-2">
             <p className="text-lg text-center mb-2">
               Streetsville GO to Union Station GO
