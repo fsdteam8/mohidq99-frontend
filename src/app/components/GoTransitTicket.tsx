@@ -92,16 +92,43 @@ useEffect(() => {
             {/* <Image src="/logo.svg" alt="Logo"  width={200} height={300} className="w-[150px] h-[80px] text-amber-300" /> */}
           </div>
 
-          <div className="flex items-center overflow-x-auto justify-between w-[200vw] mt-2 animate-marquee  ">
-          <h1 className="text-[24px] font-medium text-center ">GO TRANSIT</h1>
+          {/* <div className="flex items-center overflow-x-auto justify-between w-full mt-2 animate-marquee  ">
             <div className="w-1 h-1 bg-white rounded-full" />
             
             <h1 className="text-[24px] font-medium text-center ">GO TRANSIT</h1>
             <div className="w-1 h-1 bg-white rounded-full" />
             <h1 className="text-[24px] font-medium text-center ">GO TRANSIT</h1>
-          </div>
+            <div className="w-1 h-1 bg-white rounded-full" />
+            <h1 className="text-[24px] font-medium text-center ">GO TRANSIT</h1>
+          </div> */}
 
-
+<div className="marquee text-White p-0 ite  ">
+  <ol className="items-center">
+    <li>GO TRANSIT</li>
+    <div className="w-1 h-1 bg-white rounded-full mx-20" />
+    <li>GO TRANSIT</li>
+    <div className="w-1 h-1 bg-white rounded-full mx-20" />
+    <li>GO TRANSIT</li>
+    <div className="w-1 h-1 bg-white rounded-full mx-20" />
+    <li>GO TRANSIT</li>
+    <div className="w-1 h-1 bg-white rounded-full mx-20" />
+    <li>GO TRANSIT</li>
+    <div className="w-1 h-1 bg-white rounded-full mx-20" />
+    <li>GO TRANSIT</li>
+    <div className="w-1 h-1 bg-white rounded-full mx-20" />
+    <li>GO TRANSIT</li>
+    <div className="w-1 h-1 bg-white rounded-full mx-20" />
+    <li>GO TRANSIT</li>
+    <div className="w-1 h-1 bg-white rounded-full mx-20" />
+    <li>GO TRANSIT</li>
+    <div className="w-1 h-1 bg-white rounded-full mx-20" />
+    <li>GO TRANSIT</li>
+    <div className="w-1 h-1 bg-white rounded-full mx-20" />
+    <li>GO TRANSIT</li>
+    <div className="w-1 h-1 bg-white rounded-full mx-20" />
+    <li>GO TRANSIT</li>
+  </ol>
+</div>
           
           <div className="flex items-center justify-center w-full mt-2">
             <p className="text-lg text-center mb-2">
