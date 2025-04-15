@@ -76,7 +76,7 @@ body {
   height: 40px;
   line-height: 40px;
   position: absolute;
-  animation: marquee 10s linear infinite;
+  animation: marquee 15s linear infinite;
 }
  
 .marquee li {

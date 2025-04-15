@@ -186,7 +186,7 @@ useEffect(() => {
               <BarcodeIcon />
             </div>
 
-            <p className="text-blue-700 mt-[-65px] bg-white text-[24px] px-4  p-2 ">
+            <p className="text-blue-700 mt-[-60px] bg-white text-[22px] px-3  p-1 ">
               <span className="blink">ACTIVE</span>
             </p>
           </div>
@@ -217,7 +217,7 @@ useEffect(() => {
             <br />
             asked
           </p>
-          <p className="text-[50px] font-normal  pb-5">{timeLeft}</p>
+          <p className="text-[40px] font-normal  pb-5">{timeLeft}</p>
         </div>
       </div>
     </div>
